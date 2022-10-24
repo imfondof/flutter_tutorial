@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'demo/cupertino/CupertinoPickerDemo.dart';
 import 'demo/cupertino/CupertinoProgressIndicatorDemo.dart';
 import 'demo/cupertino/CupertinoTextFieldDemo.dart';
+import 'demo/material/BottomNavigationDemo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: const CupertinoTextFieldDemo(),
+      home: const BottomNavigationDemo(restorationId: 'bottom_navigation_without_labels_demo',),
     );
   }
 }
